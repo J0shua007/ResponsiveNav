@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive NavBar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>Joshua</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button>Login</button></li>
+            </ul>
+        </div>
+        <div id="menu">
+            <a id="button"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </nav>
+
+    <script>
+        //  // Get references to the elements
+        //  const menuIcon = document.querySelector("#menu i");
+        // const menuList = document.querySelector("ul");
+
+        // // Add a click event listener to the menu icon
+        // menuIcon.addEventListener("click", function () {
+        //     // Toggle the visibility of the menu list
+        //     if (menuList.style.display === "block") {
+        //         menuList.style.display = "none";
+        //     } else {
+        //         menuList.style.display = "block";
+        //     }
+        // });
+
+        $(document).ready(function() {
+            $('#button').click(function() {
+                $('ul').slideToggle(2000);
+            })
+        })
+    </script>
+
+</body>
+</html>
